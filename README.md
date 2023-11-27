@@ -59,7 +59,7 @@ These instructions will get you a copy of the project up and running on your loc
 3.  **Set Up Environment Variables:**
     
     -   Create a `.env` file in the root directory.
-    -   Copy data from sample file `.env` created under `env` folder
+    -   Copy data from sample file `.env.local` created under `env` folder
 
 ### Database Setup
 
