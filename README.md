@@ -31,7 +31,7 @@ The program operates under the following rule for granting access:
 
 ## Code Coverage
 
-![Code Coverage](https://github.com/oxlb/access-door-project/raw/main/coverage.png)
+![Code Coverage](https://github.com/oxlb/access-door-project/blob/F-Stage-2/coverage-2.png)
 
 ## Use Case
 
