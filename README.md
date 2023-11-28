@@ -33,6 +33,20 @@ The program operates under the following rule for granting access:
 
 ![Code Coverage](https://github.com/oxlb/access-door-project/raw/main/coverage.png)
 
+## Use Case
+
+#### Use Case 1
+
+![Use Case 1](https://github.com/oxlb/access-door-project/blob/F-Stage-2/case-1.png)
+
+#### Use Case 2
+
+![Use Case 2](https://github.com/oxlb/access-door-project/blob/F-Stage-2/case-2.png)
+
+#### Use Case 3
+![Use Case 3](https://github.com/oxlb/access-door-project/blob/F-Stage-2/case-3.png)
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
