@@ -27,7 +27,7 @@ The program operates under the following rule for granting access:
 
 - A person is allowed to enter if:
   - The access request includes an identification parameter (ID).
-  - The name of the person is "Joe".
+  - The name of the person is "Joe" or if a person has an valid access code stored in database, the person is allowed
 
 ## Code Coverage
 
