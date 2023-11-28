@@ -59,9 +59,25 @@ These instructions will get you a copy of the project up and running on your loc
 3.  **Set Up Environment Variables:**
     
     -   Create a `.env` file in the root directory.
-    -   Copy data from sample file `.env.local` created under `env` folder
+    -   Copy data from sample file `.env` created under `env` folder
 
 ### Database Setup
+You have two options for running `PostgreSQL`:
+
+1.  **Local Installation:** You can install `PostgreSQL` directly on your local machine.
+    
+2.  **Docker Installation:** Alternatively, you can use [Docker Desktop](https://www.docker.com/products/docker-desktop/) to run `PostgreSQL` as a Docker container.
+Desktop](https://www.docker.com/products/docker-desktop/)
+
+#### Start the Docker Containers
+
+Use Docker Compose to build and start the Docker `Postgres` containers defined in the `docker-compose.yml` file:
+
+``` bash
+docker-compose up -d
+``` 
+
+The `-d` flag runs the containers in the background.
 
 1.  **Run Knex Migrations:**
     
@@ -127,6 +143,15 @@ These instructions will get you a copy of the project up and running on your loc
     ```
     
 
+### Stop and Remove the Containers
+
+To stop and remove the Docker containers when you are done, run:
+
+bashCopy code
+
+```Bash
+docker-compose down
+```
 ## Built With
 
 -   [Express](https://expressjs.com/) - The web framework used
