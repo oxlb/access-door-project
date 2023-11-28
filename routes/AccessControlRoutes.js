@@ -4,12 +4,12 @@ const service = new AccessControlService();
 
 async function handleAccessControl(req, res, next) {
   try {
-    const { id, name } = req.body;
+    const { id, name, accessCode } = req.body;
     if (!id || !name) {
       throw new CustomError(400, "Missing id or name");
     }
 
-    const allowed = await service.isPersonAllowed(name);
+    const allowed = await service.isPersonAllowed(name, accessCode);
     if (!allowed) {
       throw new CustomError(403, "Access Denied");
     } else {

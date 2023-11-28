@@ -5,8 +5,8 @@ class AccessControlService {
     this.repository = new AccessControlRepository();
   }
 
-  async isPersonAllowed(name) {
-    const allowed = await this.repository.checkAccess(name);
+  async isPersonAllowed(name, accessCode) {
+    const allowed = await this.repository.checkAccess(name, accessCode);
     if (allowed) {
       await this.repository.addToAccessLog(name);
     }
