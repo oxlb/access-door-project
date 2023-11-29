@@ -138,8 +138,6 @@ The `-d` flag runs the containers in the background.
 
 To stop and remove the Docker containers when you are done, run:
 
-bashCopy code
-
 ```Bash
 docker-compose down
 ```
