@@ -28,6 +28,10 @@ The program operates under the following rule for granting access:
     -   The access request includes an identification parameter (ID).
     -   The name of the person is "Joe".
 
+## Code Coverage
+
+![Code Coverage](https://github.com/oxlb/access-door-project/raw/main/coverage.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -99,19 +103,6 @@ The `-d` flag runs the containers in the background.
     ``` bash
     npm run start
     ``` 
-    
--   **Start the application in staging environment:**
-    
-    ``` bash
-    npm run start:stage
-    ```
-    
--   **Start the application in production environment:**
-    
-    ``` bash
-    npm run start:prod
-    ```
-    
 
 ### Running Tests
 
@@ -146,8 +137,6 @@ The `-d` flag runs the containers in the background.
 ### Stop and Remove the Containers
 
 To stop and remove the Docker containers when you are done, run:
-
-bashCopy code
 
 ```Bash
 docker-compose down
