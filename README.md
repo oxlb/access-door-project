@@ -118,18 +118,6 @@ The `-d` flag runs the containers in the background.
   npm run start
   ```
 
-- **Start the application in staging environment:**
-
-  ```bash
-  npm run start:stage
-  ```
-
-- **Start the application in production environment:**
-
-  ```bash
-  npm run start:prod
-  ```
-
 ### Running Tests
 
 - **Run tests with Jest:**
