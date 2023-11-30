@@ -26,6 +26,28 @@ describe("AccessControlRepository", () => {
       const isAllowed = await repository.checkAccess("NotAllowedUser");
       expect(isAllowed).toBe(false);
     });
+
+    it("should return true for a valid access code", async () => {
+      const accessCode = "validAccessCode";
+      db.mockReturnValue({
+        where: jest.fn().mockReturnThis(),
+        first: jest.fn().mockResolvedValue({}),
+      });
+
+      const isAllowed = await repository.checkAccess(null, accessCode);
+      expect(isAllowed).toBe(true);
+    });
+
+    it("should return false for an invalid access code", async () => {
+      const accessCode = "invalidAccessCode";
+      db.mockReturnValue({
+        where: jest.fn().mockReturnThis(),
+        first: jest.fn().mockResolvedValue(null),
+      });
+
+      const isAllowed = await repository.checkAccess(null, accessCode);
+      expect(isAllowed).toBe(false);
+    });
   });
 
   describe("addToAccessLog", () => {
